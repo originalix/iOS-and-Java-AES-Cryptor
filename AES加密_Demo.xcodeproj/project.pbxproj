@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A7B2061BBDF7DE5BFD57AB /* NEUSecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B77251700D130FA01DD9 /* NEUSecurityUtil.m */; };
+		12A7B8DEB1C79BED171D98B8 /* NEUBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B23DA5322655F99DB1D6 /* NEUBase64.m */; };
+		12A7BAF0EC842D265576C022 /* NSData+NEUAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B258C87B7F6A40BECD09 /* NSData+NEUAES.m */; };
 		56C49D391D92832A000BED36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C49D381D92832A000BED36 /* main.m */; };
 		56C49D3C1D92832A000BED36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C49D3B1D92832A000BED36 /* AppDelegate.m */; };
 		56C49D3F1D92832A000BED36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C49D3E1D92832A000BED36 /* ViewController.m */; };
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12A7B23DA5322655F99DB1D6 /* NEUBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUBase64.m; sourceTree = "<group>"; };
+		12A7B257867818C8864F371E /* NEUBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUBase64.h; sourceTree = "<group>"; };
+		12A7B258C87B7F6A40BECD09 /* NSData+NEUAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NEUAES.m"; sourceTree = "<group>"; };
+		12A7B77251700D130FA01DD9 /* NEUSecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUSecurityUtil.m; sourceTree = "<group>"; };
+		12A7B99ED72CFFC2A4B04541 /* NSData+NEUAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NEUAES.h"; sourceTree = "<group>"; };
+		12A7BA1ED1CA5FF4D0D4BD80 /* NEUDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUDefines.h; sourceTree = "<group>"; };
+		12A7BD21EB433556315F3FF1 /* NEUSecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUSecurityUtil.h; sourceTree = "<group>"; };
 		56C49D341D92832A000BED36 /* AES加密_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AES加密_Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C49D381D92832A000BED36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56C49D3A1D92832A000BED36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A7B9C6961E3B8D7E9DDB32 /* NEUSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				12A7BC785B09785432AA2037 /* NEUBase64 */,
+				12A7B99ED72CFFC2A4B04541 /* NSData+NEUAES.h */,
+				12A7B258C87B7F6A40BECD09 /* NSData+NEUAES.m */,
+				12A7BD21EB433556315F3FF1 /* NEUSecurityUtil.h */,
+				12A7B77251700D130FA01DD9 /* NEUSecurityUtil.m */,
+			);
+			path = NEUSecurity;
+			sourceTree = "<group>";
+		};
+		12A7BC785B09785432AA2037 /* NEUBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				12A7B257867818C8864F371E /* NEUBase64.h */,
+				12A7B23DA5322655F99DB1D6 /* NEUBase64.m */,
+				12A7BA1ED1CA5FF4D0D4BD80 /* NEUDefines.h */,
+			);
+			path = NEUBase64;
+			sourceTree = "<group>";
+		};
 		56C49D2B1D92832A000BED36 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +117,7 @@
 				56C49D501D92832A000BED36 /* AES加密_DemoTests */,
 				56C49D5B1D92832A000BED36 /* AES加密_DemoUITests */,
 				56C49D351D92832A000BED36 /* Products */,
+				12A7B9C6961E3B8D7E9DDB32 /* NEUSecurity */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,6 +306,9 @@
 				56C49D3F1D92832A000BED36 /* ViewController.m in Sources */,
 				56C49D3C1D92832A000BED36 /* AppDelegate.m in Sources */,
 				56C49D391D92832A000BED36 /* main.m in Sources */,
+				12A7B8DEB1C79BED171D98B8 /* NEUBase64.m in Sources */,
+				12A7BAF0EC842D265576C022 /* NSData+NEUAES.m in Sources */,
+				12A7B2061BBDF7DE5BFD57AB /* NEUSecurityUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lix.AES---Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
 			};
 			name = Debug;
 		};
@@ -430,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lix.AES---Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
 			};
 			name = Release;
 		};

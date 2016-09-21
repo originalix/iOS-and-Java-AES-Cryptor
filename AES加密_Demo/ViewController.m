@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NEUSecurityUtil.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    /*
+     * 将被加密的字符串
+     * 秘钥和初始化向量iv都已经在 NEUSecurityUtil 类中设置好
+     */
+    NSString *str = @"123456";
+    NSString *encryptStr = [NEUSecurityUtil neu_encryptAESData:str];
+    NSLog(@"加密后的字符串 = %@", encryptStr);
+
+    NSString *decryptStr = [NEUSecurityUtil neu_decryptAESData:encryptStr];
+    NSLog(@"解密后的字符串 = %@", decryptStr);
 }
 
 - (void)didReceiveMemoryWarning {
